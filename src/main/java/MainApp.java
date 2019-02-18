@@ -1,13 +1,16 @@
+import Sorting.BubbleSort;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class MainApp {
     public static void main(String[] args) {
-        final int BOUND=1_000_000;
-        int[] array=new int[BOUND];
+        final int BOUND = 100;
+        ArrayList<Integer> array = new ArrayList<>(BOUND);
         Random random=new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i]=random.nextInt(BOUND);
+        for (int i = 0; i < BOUND; i++) {
+            array.add(random.nextInt(BOUND));
         }
+        System.out.println((BubbleSort.sort(array)));
     }
 }
