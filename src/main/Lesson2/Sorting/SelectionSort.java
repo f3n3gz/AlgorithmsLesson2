@@ -2,7 +2,8 @@ package Sorting;
 
 import java.util.ArrayList;
 
-public class SelectionSort {
+public class SelectionSort implements SortInterface {
+
     public static <E extends Comparable<E>> ArrayList<E> sort(ArrayList<E> arrayList) {
 
         for (int i = 1; i < arrayList.size(); i++) {
