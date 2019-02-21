@@ -34,7 +34,7 @@ public class DeckImpl<E> implements Deck<E> {
         if (this.isEmpty()) {
             return insertFirstElement(e);
         }
-        rightCorner = (++rightCorner) % (queueLenght - 1);
+        rightCorner = (++rightCorner) % (queueLenght);
         data[rightCorner] = e;
         size++;
         return true;
@@ -46,7 +46,7 @@ public class DeckImpl<E> implements Deck<E> {
             return null;
         }
         E temp = data[leftCorner++];
-        leftCorner = leftCorner % (queueLenght - 1);
+        leftCorner = leftCorner % (queueLenght);
         size--;
         return temp;
     }
