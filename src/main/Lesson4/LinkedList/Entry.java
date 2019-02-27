@@ -6,6 +6,7 @@ public class Entry<E> {
 
     private final E value;
     private Entry<E> next;
+    private Entry<E> prev;
 
     public Entry(E value) {
         this.value = value;
@@ -22,6 +23,15 @@ public class Entry<E> {
     public void setNext(Entry<E> next) {
         this.next = next;
     }
+
+    public Entry<E> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Entry<E> prev) {
+        this.prev = prev;
+    }
+
 
     @Override
     public boolean equals(Object o) {
