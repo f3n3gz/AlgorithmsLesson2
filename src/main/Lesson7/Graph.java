@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 public class Graph {
     private HashMap<Vertex, List<Vertex>> data;
 
-    public void Graph() {
+    public Graph() {
         data = new HashMap<>();
     }
 
